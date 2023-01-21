@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+ <link rel="stylesheet" href="static/prontuario.css">
+ <title>PÁGINA DE SAÚDE</title>
+</head>
+<body>
+<!--menu -->
+<ul class="navbar">
+ <li><a href="/">Página Inicial</a>
+ <li><a rel="musingssheets" href="/imc">IMC</a>
+ <li><a href="/circunferencia">RISCOS DE DOENÇAS CARDÍACAS</a>
+  <li><a href="/agua">Quantidade DE ÁGUA NECESSÁRIA</a>
+ <li><a href="/checkup">CHECK-UP</a>
+</ul>
+<!-- Main content -->
+<h1>PÁGINA DE SAÚDE</h1>
+<p>Bem-Vindos ao Saude.com sua saúde nossa alegria!
+<p><br>Faça diversas monitoramentos de saúde. Acesse os Links ao lado para monitorar.
+
+<!-- Sign and date the page, it's only polite! -->
+{% extends "layout.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+{% block content %}
+{% endblock %}
+<address>Feito 08 Novembro 2022<br>
+ by Abimael Oliveira.</address>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="static/prontuario.css">
+    <title>CHECK-UP</title>
+</head>
+<body>
+<h1> CHECK-UP </h1>
+        <h0.1> Digite Seu Peso em Quilogramas,altura em metros e circunferencia em centimetros. </h0.1><br>
+<form action="/checkup.resultado" method="get">
+
+   <table>
+            <tr>
+        <th> ALTURA <input type="text" name="altura" placeholder="ex: 1.52"><br></th>
+        <th> PESO <input type="text" name="peso" placeholder="ex: 60.08"><br></th>
+            </tr>
+
+            <tr>
+    <th> Circunferência <input type="text" name="circ" placeholder="ex: 61.12"><br></th>
+   <th> Sexo <select name="sexo"><br>
+  <option value="1">Masculino</option>
+  <option value="2" selected>Feminino</option>
+</th>
+            </tr>
+           <tr>
+                   <th><input type="submit" name="submit" value="Enviar"></th>
+           </tr>
+  </table>
+    <!--menu -->
+<ul class="navbar">
+ <li><a href="/">Página Inicial</a>
+ <li><a rel="musingssheets" href="/imc">IMC</a>
+ <li><a href="/circunferencia">RISCOS DE DOENÇAS CARDÍACAS</a>
+  <li><a href="/agua">Quantidade DE ÁGUA NECESSÁRIA</a>
+ <li><a href="/checkup">CHECK-UP</a>
+</ul>
+</form>
+        <h0.1> <p>Aqui com os dados: peso, Circunferencia abdominal, sexo biológico e altura vamos dizer seus riscos de desenvolver problemas cardícos, IMC, e a quantidade nescessária de água que seu corpo precisa.</h0.1><br> </p>
+        
+<!-- Sign and date the page, it's only polite! -->
+<address><p>Feito 08 Novembro 2022<br>
+ by Abimael Oliveira.</p></address>
+
+</body>
+
+</html>

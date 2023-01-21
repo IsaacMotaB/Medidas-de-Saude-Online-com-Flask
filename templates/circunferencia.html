@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="static/voltar.css">
+    <title>CIRCUNFÊRENCIA: RESULTADO</title>
+</head>
+<body>
+
+<h1> RISCO DE DOENÇAS CARDIOVASCULARES <br></h1>
+       <h2> Risco: {% if risco %}
+          {{risco}}
+       {% endif %} <br></h2> 
+<h2> Programas Recomendados: {% if programa %}
+          {{programa}}
+       {% endif %} <br></h2>
+
+<!--menu -->
+<ul class="navbar">
+ <li><a href="/">INÍCIO</a>
+  <li><a href="/circunferencia">RISCOS DE DOENÇAS CARDÍACAS</a>
+</body>
+</html> 

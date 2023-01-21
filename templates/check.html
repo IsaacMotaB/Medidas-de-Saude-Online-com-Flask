@@ -1,0 +1,34 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="static/voltar.css">
+    <title>check-up: RESULTADO</title>
+</head>
+<body>
+        
+<h1> ÍNDICE DE MASSA CORPORAL <br><h1>
+       <h2> IMC: {% if imc %}
+          {{imc}}
+       {% endif %} Kg/m² => {% if classificacao %}
+          {{classificacao}}
+       {% endif %} <br></h2>
+
+<h1> QUANTIDADE NESCESSÁRIA DE ÁGUA <br></h1>
+        <h2>  {% if agua %}
+          {{agua}}
+       {% endif %} Litros por dia <br></h2>
+
+<h1> RISCO DE DOENÇAS CARDIOVASCULARES <br></h1>
+       <h2> Risco: {% if risco %}
+          {{risco}}
+       {% endif %} <br></h2>
+
+<h2> Programas Recomendados: {% if programa %}
+          {{programa}}
+       {% endif %} <br></h2>
+<!--menu -->
+<ul class="navbar">
+ <li><a href="/">INÍCIO</a>
+  <li><a href="/checkup">"CHECK-UP"</a>
+</body>
+</html> 

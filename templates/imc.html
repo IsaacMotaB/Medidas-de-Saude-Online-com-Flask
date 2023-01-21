@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="static/voltar.css">
+    <title>IMC: RESULTADO</title>
+</head>
+<body>
+
+<h1> ÍNDICE DE MASSA CORPORAL <br><h1>
+       <h2> IMC: {% if imc %}
+          {{imc}}
+       {% endif %} Kg/m² => {% if classificacao %}
+          {{classificacao}}
+       {% endif %} <br></h2>
+
+<!--menu -->
+<ul class="navbar">
+ <li><a href="/">INÍCIO</a>
+  <li><a href="/imc">IMC</a>
+
+</body>
+</html> 
