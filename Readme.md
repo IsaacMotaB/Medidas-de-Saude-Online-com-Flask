@@ -1,0 +1,1 @@
+Site que calcula medidas básicas relacionadas à saúde, como o IMC e a quantidade necessária de água por dia. Porém agora já utilizando Flask.
